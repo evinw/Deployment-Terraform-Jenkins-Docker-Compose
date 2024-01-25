@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  corpwebapp:
+    build: ../app
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=corpdb
+    depends_on:
+      - corpdb
+
+  corpdb:
+    image: mongo
+    volumes:
+      - dbData:/data/db
+
+volumes:
+  dbData:
