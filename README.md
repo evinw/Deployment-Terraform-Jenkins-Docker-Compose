@@ -1,4 +1,4 @@
-# DevOps Application Deployment
+# Node.js deployment with Terraform, Jenkins, Docker and Docker Compose
 
 This repo's got everything needed to launch a web app using DevOps methods. Terraform to set up your infrastructure, Jenkins to handle continuous integration and deployment, Docker for containerizing of the app, and Docker Compose to manage multiple containers.
 
